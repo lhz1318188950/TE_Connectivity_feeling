@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Topbar">
+        <attr name="title" format="string"/>
+        <attr name="title_color" format="color"/>
+        <attr name="title_size" format="dimension"/>
+        <attr name="btn_height" format="dimension"/>
+        <attr name="btn_margin" format="dimension"/>
+        <attr name="btn_vertical_margin" format="dimension"/>
+        <attr name="btn_horizontal_margin" format="dimension"/>
+        <attr name="right_text" format="string"/>
+        <attr name="left_text" format="string"/>
+        <attr name="right_background" format="reference|color"/>
+        <attr name="left_background" format="reference|color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/aupulu"
+        android:layout_width="28sp"
+        android:layout_height="28sp"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/app_name"/>
+    <TextView
+        android:id="@+id/reIp"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

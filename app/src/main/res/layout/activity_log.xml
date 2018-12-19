@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:background="@mipmap/login"
+    android:stretchColumns="0,3"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow android:paddingTop="120dp">                 <!-- 每添加一项就多一列 -->
+        <ImageView
+            android:id="@+id/TE_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/TE_logo"
+            android:src="@mipmap/te_logo" />
+    </TableRow>
+    <TableRow  android:paddingTop="16dp">
+        <EditText
+            android:id="@+id/User_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Phone/E-mail"
+            android:hint="@string/user_name"
+            android:inputType="text"
+            android:paddingBottom="20dp"
+            android:singleLine="true"
+            android:textColorHint="#A9A9A0" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:id="@+id/User_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Password"
+            android:hint="@string/user_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="#A9A9A0" />
+    </TableRow>
+    <TableRow android:paddingTop="16dp">
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_sign_in"
+            android:textColor="#FFFFFF"
+            android:background="#33CCCC" />
+    </TableRow>
+    <TableRow android:paddingTop="16dp">
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_sign_up"
+            android:textColor="#FFFFFF"
+            android:background="#F99000" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/postback"
+        android:icon="@drawable/break_chain"
+        android:title="@string/postback"/>
+
+    <item
+        android:id="@+id/startup"
+        android:icon="@drawable/break_chain"
+        android:title="@string/startup"/>
+ <!--   <item
+        android:id="@+id/reload"
+        android:icon="@drawable/reload"
+        android:title="@string/reload"/>
+        -->
+</menu>
+

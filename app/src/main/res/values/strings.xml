@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Feeling</string>
+    <string name="user_name">Phone/E-mail</string>
+    <string name="user_password">Password</string>
+    <string name="user_sign_in">Sign in</string>
+    <string name="user_sign_up">Sign up</string>
+    <string name="TE_logo">This is the logo of TE Connectivity</string>
+    <string name="re_enter">Re-enter Password</string>
+    <string name="create">Create Your New Account !</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_connect">ConnectActivity</string>
+    <string name="connect_fail">Connect fail</string>
+    <string name="connect_content">Oops, you have not connected any devices!</string>
+    <string name="device_number">Fill in the device number</string>
+    <string name="connect">Connect</string>
+    <string name="percent">%</string>
+    <string name="number1">0</string>
+    <string name="level">信息完成度</string>
+    <string name="Return">Return to log</string>
+    <string name="startup">start up</string>
+    <string name="postback">post back</string>
+    <string name="C">C</string>
+    <string name="F">F</string>
+    <string name="H">H</string>
+    <string name="ool">ool</string>
+    <string name="rigid">rigid</string>
+    <string name="ot">ot</string>
+    <string name="omfortable">omfortable</string>
+    <string name="showdetail">Show detail</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="Wind_speed">Wind Speed</string>
+    <string name="air_pressure">Air Pressure</string>
+    <string name="air_quality">Air Quality</string>
+    <string name="air_pollution">Air pollution</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="index">Index</string>
+    <string name="tips">Tips</string>
+    <string name="monitor">Monitor</string>
+    <string name="name">name</string>
+    <string name="reset">Reset</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="optimum">Optimum</string>
+    <string name="see_more">See more</string>
+    <string name="feedback">Make your own parameters</string>
+    <string name="submit">Submit</string>
+    <string name="harm">Harm</string>
+    <string name="suggestion">Suggestions</string>
+    <string name="spin_prompt"> Select </string>
+    <string-array name="levels">
+        <item> Optimum </item>
+        <item> High </item>
+        <item> Low </item>
+    </string-array>
+</resources>

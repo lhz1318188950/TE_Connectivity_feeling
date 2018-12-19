@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/new_bp2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="?buttonBarButtonStyle"
+            android:id="@+id/Index"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="@string/index"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#5afcc101"/>
+
+        <Button
+            style="?buttonBarButtonStyle"
+            android:id="@+id/tips"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:background="#406aff00"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/tips"/>
+
+        <Button
+            style="?buttonBarButtonStyle"
+            android:id="@+id/reset"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:background="#5f01f3fc"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/reset"/>
+
+    </LinearLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="480dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="72dp">
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/temperature"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/temp_1"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:text="@string/low"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp"/>
+                <Spinner
+                    android:id="@+id/temp_spinner"
+                    android:visibility="invisible"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:entries="@array/levels"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp">
+
+                </Spinner>
+
+            </FrameLayout>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/humidity"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/humidity_1"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:text="@string/optimum"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp"/>
+                <Spinner
+                    android:id="@+id/humidity_spinner"
+                    android:visibility="invisible"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:entries="@array/levels"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp">
+
+                </Spinner>
+
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/Wind_speed"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/wind_speed_1"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:text="@string/optimum"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp"/>
+                <Spinner
+                    android:id="@+id/wind_speed_spinner"
+                    android:visibility="invisible"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:entries="@array/levels"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp">
+
+                </Spinner>
+
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/air_pressure"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/air_pressure_1"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:text="@string/optimum"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp"/>
+                <Spinner
+                    android:id="@+id/air_pressure_spinner"
+                    android:visibility="invisible"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:entries="@array/levels"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp">
+
+                </Spinner>
+
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/air_quality"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/air_quality_1"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:text="@string/high"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp"/>
+                <Spinner
+                    android:id="@+id/air_quality_spinner"
+                    android:visibility="invisible"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:entries="@array/levels"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp">
+
+                </Spinner>
+
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp"
+            android:paddingBottom="16dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/air_pollution"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/air_pollution_1"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:text="@string/optimum"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp"/>
+                <Spinner
+                    android:id="@+id/air_pollution_spinner"
+                    android:visibility="invisible"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:background="@mipmap/text_frame"
+                    android:entries="@array/levels"
+                    android:textColor="#6c6b6b"
+                    android:textSize="20sp">
+
+                </Spinner>
+
+            </FrameLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="@string/submit"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="#c435b8e4" />
+
+
+
+</LinearLayout>

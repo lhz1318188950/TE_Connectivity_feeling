@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:background="@mipmap/login"
+    android:stretchColumns="0,3"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow android:paddingTop="100dp">
+        <TextView
+            android:id="@+id/user_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            android:textSize="26sp"
+            android:textColor="#E6E6FA"
+            />
+    </TableRow>
+    <TableRow  android:paddingTop="16dp">
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"
+            android:textColorHint="#A9A9A0"
+            android:autofillHints="Phone/E-mail"
+            android:inputType="text" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_password"
+            android:textColorHint="#A9A9A0"
+            android:autofillHints="Password"
+            android:paddingTop="24dp"
+            android:inputType="textPassword" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:id="@+id/user_reenter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:hint="@string/re_enter"
+            android:textColorHint="#A9A9A0"
+            android:autofillHints="Password"
+            android:inputType="textPassword" />
+    </TableRow>
+    <TableRow android:paddingTop="16dp">
+        <Button
+            android:id="@+id/button_sign_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_sign_up"
+            android:textColor="#FFFFFF"
+            android:background="#F99000" />
+    </TableRow>
+    <TableRow android:paddingTop="16dp">
+        <Button
+            android:id="@+id/button_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_sign_in"
+            android:textColor="#FFFFFF"
+            android:background="#33CCCC" />
+    </TableRow>
+
+</TableLayout>

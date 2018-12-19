@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/new_bp1"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="?buttonBarButtonStyle"
+            android:id="@+id/Index"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="@string/index"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#5afcc101"/>
+
+        <Button
+            style="?buttonBarButtonStyle"
+            android:id="@+id/tips"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:background="#406aff00"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/tips"/>
+
+        <Button
+            style="?buttonBarButtonStyle"
+            android:id="@+id/reset"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:background="#5f01f3fc"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/reset"/>
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="36dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="32dp"
+        android:text="@string/feedback"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        android:paddingVertical="32dp">
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/temperature"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/temp_1"
+                android:layout_height="wrap_content"
+                android:layout_width="12dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:background="@mipmap/text_frame"
+                android:text="@string/high"
+                android:textColor="#6c6b6b"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/humidity"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/hum_1"
+                android:layout_height="wrap_content"
+                android:layout_width="12dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:background="@mipmap/text_frame"
+                android:text="@string/high"
+                android:textColor="#6c6b6b"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/Wind_speed"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/wind_1"
+                android:layout_height="wrap_content"
+                android:layout_width="12dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:background="@mipmap/text_frame"
+                android:text="@string/optimum"
+                android:textColor="#6c6b6b"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/air_pressure"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/pressure_1"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:background="@mipmap/text_frame"
+                android:text="@string/low"
+                android:textColor="#6c6b6b"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/air_quality"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/pm_1"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:background="@mipmap/text_frame"
+                android:text="@string/optimum"
+                android:textColor="#6c6b6b"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="32dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/air_pollution"/>
+            <TextView
+                android:paddingStart="48dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/voc_1"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:background="@mipmap/text_frame"
+                android:text="@string/optimum"
+                android:textColor="#6c6b6b"
+                android:textSize="20sp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginHorizontal="32dp"
+        android:background="#57edfa"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>-->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="128dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="32dp"
+                android:text="@string/harm"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#976ff2"
+                android:paddingBottom="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Heat stroke, Heart disease"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Poor breathing"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Pharyngitis,Tracheitis,Pneumonia, Nosebleeds, Dehydration"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Altitude sickness,Heart disease,Mental illness"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Respiratory diseases, Asthma,Heart disease"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="72dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="32dp"
+                android:text="@string/suggestion"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:paddingBottom="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Turn on air conditioning or increase heating"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Dehumidification"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Close the doors and windows, wear a hat or mask"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Open window and ventilation device, use oxygen machine"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Use air purifiers, raise green plants, wear dust masks, and pay attention to deep skin cleansing"/>
+
+            <Button
+                android:id="@+id/button_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:text="@string/user_sign_in"
+                android:textColor="#FFFFFF"
+                android:background="#33CCCC" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

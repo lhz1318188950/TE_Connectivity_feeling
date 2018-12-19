@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/connect_bg"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/connect_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="48dp"
+            android:textSize="14pt"
+            android:fontFamily="sans-serif"
+            android:textColor="#D8BFD8"
+            android:text="@string/connect_content"/>
+    </TableRow>
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/connect"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:paddingTop="24sp"
+            android:contentDescription="@string/connect_fail"
+            android:src="@mipmap/connect"/>
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <Spinner
+            android:id="@+id/device_number"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            style="android:dropDownListViewStyle"
+            android:autofillHints="@string/device_number"
+            android:hint="@string/device_number"
+            android:textSize="8pt"
+            android:background="@mipmap/text_frame"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="#A9A9A0" />
+        <Button
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:id="@+id/button_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/connect"
+            android:textColor="#FFFFFF"
+            android:background="#33CCCC" />
+    </LinearLayout>
+
+    <TableRow android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingVertical="16dp">
+        <Button
+            android:id="@+id/button_return_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="64dp"
+            android:layout_marginVertical="24sp"
+            android:text="@string/Return"
+            android:textColor="#FFFFFF"
+            android:background="#dda6e6" />
+    </TableRow>
+
+
+</TableLayout>
